@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+fieldset{
+    margin: 1rem;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+/* Add Paragraphs */
+#para{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* Number Guessing */
+.numberGuess{
+    text-align: center;
+    padding: 1rem;
+}
+.form input[type="number"] {
+    width: 200px;
+  }
+
+  .lastResult {
+    color: white;
+    padding: 3px;
+  }

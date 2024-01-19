@@ -1,0 +1,44 @@
+body{
+   
+    
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+nav{
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    margin: 0.5em;
+}
+button{
+    padding: 0.7em;
+    border-radius: 10%;
+    border: none;
+    box-shadow: 2px 3px 4px 0px black;
+}
+div{
+
+    margin-left: 8vw;
+    color: white;
+    margin-top: 300px;
+}
