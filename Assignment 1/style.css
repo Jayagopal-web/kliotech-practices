@@ -1,4 +1,7 @@
+/* Import google font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Remove default styles */
 *{
     margin: 0;
     padding: 0;
@@ -47,13 +50,13 @@ a{
     box-shadow: inset 150px 0 0 0 #54b3d6;
     color: white;
 }
+
 /* Every Section have 100% height */
 main section{
     height: 100vh;
 }
 
 /* Name - Quote - Background Image*/
-
 .main-content{
     background-image: url(./images/bg.jpeg);
     /* height: 90vh; */
@@ -72,6 +75,7 @@ main section{
     top: 40%;
     color: whitesmoke;
     font-size: 2em;
+    text-shadow: 0px 1px 2px black;
 }
 .main-content header q{
     display: inline-block;
@@ -100,7 +104,8 @@ main section{
     color: #fff;
     font-size: 1.2rem;
 }
-/* Biography, Achievements, Gallery, .Quotes*/
+
+/* Typography Biography, Achievements, Gallery, .Quotes */
 .biography, .achievements, .gallery, .quotes{
     margin: .5em .5em .5em .3em;
     font-size: 1.2rem;
@@ -121,9 +126,12 @@ main section{
     float: right;
     margin-left: .5em;
 }
+
+/* Head of Each Section */
 .biography h1, .achievements h1, .gallery h1, .quotes h1{
     padding-top: 5rem;
 }
+/* Subheading */
 .biography h2{
     margin-top: 1rem;
 }
@@ -139,6 +147,9 @@ main section{
 .achievements table th, tr, td{
     padding: 1rem;
     border: 1px solid #000;
+}
+.achievements caption{
+    font-size: 1.5em;
 }
 /* Hover Table effect */
 td:hover,th:hover{
@@ -196,6 +207,7 @@ td:hover,th:hover{
     align-items: center;
     color: #FFF;
 }
+/* Social media links */
 .links{
     display: flex;
     justify-content: space-evenly;
