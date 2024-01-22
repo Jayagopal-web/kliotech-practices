@@ -97,6 +97,7 @@ main section{
 .main-content header a{
     background: rgba(0,0,0,.2);
     border: 1px solid #fff;
+    display: inline-block;
     margin-top: 1rem;
     border-radius: 4px;
     padding: .5rem;
