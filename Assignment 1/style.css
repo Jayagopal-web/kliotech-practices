@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navigation{
+    height: 15%;
+    background-color: aqua;
+}
+.navigation ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 1rem;
+}
+.navigation ul li{
+    padding: 1rem;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
