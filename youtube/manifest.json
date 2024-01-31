@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Block Shorts",
+    "version": "1.0.0",
+    "description": "Block youtube shorts",
+    "content_scripts": [{
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["backgrounds.js"]
+     }]
+
+}
