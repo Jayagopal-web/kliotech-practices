@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table{
+    display: table;
+    margin: 1rem auto;
+    border: 1px #000 solid;
+}
+.caption{
+    display: table-caption;
+    text-align: center;
+}
+.table-header{
+    display: table-header-group;
+    font-weight: 800;
+}
+.rowGroup{
+    display: table-row-group;
+}
+.row{
+    display: table-row
+}
+.cell{
+    display: table-cell;
+    border: #000 1px solid;
+    padding: 10px;
+}
