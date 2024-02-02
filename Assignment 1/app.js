@@ -7,21 +7,48 @@ const message = document.getElementById("message");
 /* After successfully submit form */
 const Thanksmsg = document.getElementById("alert");
 
-form.addEventListener('submit', (e)=>{
+//phone number country code
+const mobileCountryCodes = [
+    { name: 'Afghanistan', code: '+93' },
+    { name: 'Albania', code: '+355' },
+    { name: 'Algeria', code: '+213' },
+    { name: 'Andorra', code: '+376' },
+    { name: 'Angola', code: '+244' },
+    { name: 'India', code: '+91' },
+    { name: 'Indonesia', code: '+62' },
+    { name: 'Iran', code: '+98' },
+    { name: 'Iraq', code: '+964' },
+    { name: 'Italy', code: '+39' },
+    { name: 'Zimbabwe', code: '+263' },
+];
 
+// Get phone number country code dropdown id
+const phCode = document.getElementById("number-code");
+
+// Loop all Country code
+mobileCountryCodes.forEach((item) => {
+    const option = document.createElement("option");
+    option.value = `${item.code}`;
+    option.innerText = `${item.code} ${item.name}`;
+    phCode.appendChild(option);
+    console.log(item.code);
+});
+
+
+
+// This will invoke wehen user submit the contact form
+form.addEventListener('submit', (e)=>{
+    e.preventDefault();
     // Return True if all inputs value correct, Else false.
-    if(!validateForm()){
-        e.preventDefault();
-    }else{
-        e.preventDefault();
+    if(validateForm()){
         Thanksmsg.innerText = "Thank you!!";
-        
     }
     
 });
 
 function validateForm(){
     const nameValue = username.value.trim();
+    console.log(username);
     const emailValue = email.value.trim();
     const phNumberValue = phNumber.value.trim();
     const messageValue = message.value.trim();
