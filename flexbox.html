@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Alignment</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column; /* Align items vertically */
+      height: 100vh; /* Set the container to full height of the viewport */
+    }
+
+    .section {
+      flex: 1; /* Distribute remaining space among sections */
+      border: 1px solid #ddd;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .button-container {
+        display: flex;
+      align-self: flex-end; /* Align the button to the bottom of its section */
+      /* margin-top: auto; Push the button to the bottom */
+    }
+
+    button {
+      margin-top: 10px; /* Add space between the button and content if needed */
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="section">
+      <h2>Section 1</h2>
+      <p>Content goes here.</p>
+      <div class="button-container">
+        <button>Button 1</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Section 2</h2>
+      <p>More content goes here.</p>
+      <div class="button-container">
+        <button>Button 2</button>
+      </div>
+    </div>
+
+    <!-- Add more sections as needed -->
+
+  </div>
+</body>
+</html>
